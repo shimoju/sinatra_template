@@ -12,6 +12,7 @@ gem 'puma', require: false
 
 gem 'slim'
 gem 'sass'
+gem 'compass'
 
 group :production do
   # gem 'rack-ssl'
