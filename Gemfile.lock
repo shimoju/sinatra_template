@@ -1,5 +1,6 @@
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     backports (3.6.6)
     capybara (2.5.0)
@@ -92,6 +93,7 @@ GEM
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rails-assets-jquery (2.1.4)
     rake (10.4.2)
     rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
@@ -174,6 +176,7 @@ DEPENDENCIES
   puma
   rack-livereload
   rack-test
+  rails-assets-jquery!
   rake
   rspec
   sass

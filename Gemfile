@@ -14,6 +14,10 @@ gem 'slim'
 gem 'sass'
 gem 'compass'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-jquery'
+end
+
 group :production do
   # gem 'rack-ssl'
 end
