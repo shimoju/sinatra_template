@@ -27,7 +27,20 @@ html lang="en"
           h1 Welcome to Sinatra
           p: a href="http://www.sinatrarb.com/" Read Online Documentation
 
-    == yield
+    .wrap
+      .container
+        .row
+          .col-sm-9
+            main
+              section
+                == yield
+
+          .col-sm-3
+            aside
+              nav.list-group
+                a.list-group-item.active href="#" Home
+                a.list-group-item href="#about" About
+                a.list-group-item href="#contact" Contact
 
     footer
       .container
