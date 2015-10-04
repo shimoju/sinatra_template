@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 
 gem 'sinatra', require: 'sinatra/base'
 gem 'sinatra-contrib', require: false
+gem 'sinatra-activerecord'
 gem 'sinatra-asset-pipeline', require: 'sinatra/asset_pipeline'
 gem 'uglifier'
 
@@ -21,6 +22,7 @@ source 'https://rails-assets.org' do
 end
 
 group :production do
+  gem 'pg'
   # gem 'rack-ssl'
 end
 
@@ -31,6 +33,7 @@ group :test do
 end
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'rspec'
   gem 'dotenv'
 end

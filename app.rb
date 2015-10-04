@@ -6,6 +6,7 @@ Dotenv.load if defined?(Dotenv)
 class App < Sinatra::Base
   configure do
     enable :sessions
+    register Sinatra::ActiveRecordExtension
 
     set :assets_css_compressor, :sass
     set :assets_js_compressor, :uglifier
