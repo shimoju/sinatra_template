@@ -3,10 +3,12 @@ require 'bundler/setup'
 Bundler.require(:default, ENV['RACK_ENV'])
 
 require 'active_support'
+require 'active_support/dependencies'
 Dotenv.load if defined?(Dotenv)
 
 class App < Sinatra::Base
   configure do
+    ActiveSupport::Dependencies.autoload_paths << File.expand_path('models', settings.root)
     enable :sessions
     register Sinatra::ActiveRecordExtension
 
