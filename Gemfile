@@ -6,6 +6,7 @@ gem 'sinatra-contrib', require: false
 gem 'sinatra-activerecord'
 gem 'sinatra-asset-pipeline', require: 'sinatra/asset_pipeline'
 gem 'uglifier'
+gem 'activesupport'
 
 gem 'rake'
 gem 'foreman', require: false

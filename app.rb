@@ -1,6 +1,8 @@
 ENV['RACK_ENV'] ||= 'development'
 require 'bundler/setup'
 Bundler.require(:default, ENV['RACK_ENV'])
+
+require 'active_support'
 Dotenv.load if defined?(Dotenv)
 
 class App < Sinatra::Base

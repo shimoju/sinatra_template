@@ -195,6 +195,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport
   bootstrap-sass
   capybara
   compass
